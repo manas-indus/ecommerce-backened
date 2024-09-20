@@ -35,7 +35,7 @@ router.post('/orders', (req, res) => {
           });
         }
 
-        // Commit transaction
+        // Commit transaction test
         db.commit((commitErr) => {
           if (commitErr) {
             return db.rollback(() => {
